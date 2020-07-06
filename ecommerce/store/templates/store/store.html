@@ -1,6 +1,50 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-<h3>Store</h3>
-    <img src="{% static 'images/cart.png' %}" alt="">
+
+<div class="row">
+	<div class="col-lg-4">
+		<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'images/placeholder.jpg' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+  </div>
+  <div class="card-body">
+    <a href="#" class="btn btn-secondary">Add to Cart</a>
+    <a href="#" class="btn btn-outline-success">View</a>
+    <h4 style="display: inline-block; float: right"> 20$ </h4>
+  </div>
+</div>
+	</div>
+
+		<div class="col-lg-4">
+		<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'images/placeholder.jpg' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+  </div>
+  <div class="card-body">
+    <a href="#" class="btn btn-secondary">Add to Cart</a>
+    <a href="#" class="btn btn-outline-success">View</a>
+    <h4 style="display: inline-block; float: right"> 20$ </h4>
+  </div>
+</div>
+	</div>
+
+		<div class="col-lg-4">
+		<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'images/placeholder.jpg' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+  </div>
+  <div class="card-body">
+    <a href="#" class="btn btn-secondary">Add to Cart</a>
+    <a href="#" class="btn btn-outline-success">View</a>
+    <h4 style="display: inline-block; float: right"> 20$ </h4>
+  </div>
+</div>
+	</div>
+	
+</div>
+
 {% endblock content %}

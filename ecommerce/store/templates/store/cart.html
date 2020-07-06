@@ -1,5 +1,64 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-<h3>Cart</h3>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="box-element">
+			<a type="button" class="btn btn-outline-dark">Continue Shopping</a>
+			<br>
+			<br>
+			<table class="table">
+				<tr>
+					<th> Items: 2</th>
+					<th> Total Cost: 70$</th>
+
+				</tr>
+							
+			</table>
+			<a style="float: right; display: inline-table;" href="{% url 'checkout' %}" class="btn btn-outline-success">Continue</a>
+			<br>
+			<br>
+		</div>
+
+	</div>
+	<div class="col-lg-12">
+		<div class="box-element">
+			<div class="cart-row">
+				<div style="flex: 2"> </div>
+				<div style="flex: 2"> Item Name</div>
+				<div style="flex: 1"> Price</div>
+				<div style="flex: 2"> Quantity</div>
+				<div style="flex: 2"> Total Price</div>
+				
+			</div>
+
+			<div class="cart-row">
+				<div style="flex: 2"> <img class="row-image" src="{% static 'images/placeholder.jpg' %}" alt=""></div>
+				<div style="flex: 2"> Laptop</div>
+				<div style="flex: 1"> 799$</div>
+				<div style="flex: 2"> 
+					<p class="quantity"> 1</p>
+					
+					<div class="quantity">
+						<div class="chg-quantity">
+							<img style="width: 7px; height:15px " src="{% static 'images/up.png'%}" alt="">
+						</div>
+					</div>
+					<div class="quantity">
+					<div class="chg-quantity">
+							<img style="width: 7px; height:15px " src="{% static 'images/down.png'%}" alt="">
+						</div>
+					</div>
+				</div>
+				<div style="flex: 2">799$</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
 {% endblock content %}
